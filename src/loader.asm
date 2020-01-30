@@ -8,6 +8,7 @@ section         .text
 global start
 extern main            
 start:
-        cli             
-        call kmain      
+        cli
+	push ebx             
+        call main      
         hlt             
